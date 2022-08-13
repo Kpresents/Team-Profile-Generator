@@ -140,11 +140,10 @@ function buildTeam(){
             cards= cards+interncard(employeeDB[i])
         }
     }
-
+// generate the cards
     fs.writeFileSync("./output/index.html", body(cards))
   
-    // fs.writeFile('./output/index.html',"utf-8" )
-    // ///fs generate all the cards employee DB - 
+ 
 }
 
 function addIntern(){
